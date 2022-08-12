@@ -3,6 +3,6 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Halaman About </title>
+	<title> Halaman <?php echo $data['judul'] ?> </title>
 </head>
 <body>
