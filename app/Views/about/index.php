@@ -1,11 +1,2 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Halaman About </title>
-</head>
-<body>
-	<h2> Halaman About </h2>
-</body>
-</html>
+<h2> Halaman About </h2>
+<p> Halo nama saya <?php echo $data['nama'] ?>, umur saya <?php echo $data['umur'] ?>. Saya adalah seorang <?php echo $data['pekerjaan'] ?></p>
