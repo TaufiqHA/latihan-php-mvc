@@ -9,11 +9,33 @@ class App
 	{
 		$url = $this->parsURL();
 		
-		if (file_exists('../app/Controllers/' . $url[0] . '.php')) {
-			$this->controller = $url[0];
-			unset($url[0]);
-			var_dump($url);
+		if (!empty($url)) {
+			if (file_exists('../app/Controllers/' . $url[0] . '.php')) {
+				$this->controller = $url[0];
+				unset($url[0]);
+			}
+		} 
+
+		require_once "../app/Controllers/" . $this->controller . ".php";
+		$this->controller = new $this->controller;
+
+		//method;
+
+		if (isset($url[1])) {
+			if (method_exists($this->controller, $url[1])) {
+				$this->method = $url[1];
+				unset($url[1]);
+			}
 		}
+
+		//ambil data pada array jika ada;
+
+		if (!empty($url)) {
+			$this->params = array_values($url);
+		}
+
+		//jalankan controllernya dan kirimkan data jika ada;
+		call_user_func_array([$this->controller, $this->method] , $this->params);
 	}
 
 	public function parsURL()
