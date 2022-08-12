@@ -9,6 +9,6 @@ class About extends Controller
 	
 	public function page()
 	{
-		echo "About/page";
+		$this->view('about/page');
 	}
 }
