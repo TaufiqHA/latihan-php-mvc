@@ -30,7 +30,7 @@
                                 <a href="<?php echo BASEURL; ?>/about" class="text-base py-2 mx-8 flex  group-hover:text-primary">About</a>
                             </li>
                             <li class="group">
-                                <a href="#" class="text-base py-2 mx-8 flex  group-hover:text-primary">Portfolio</a>
+                                <a href="<?php echo BASEURL; ?>/mahasiswa" class="text-base py-2 mx-8 flex  group-hover:text-primary">Mahasiswa</a>
                             </li>
                             <li class="group">
                                 <a href="#" class="text-base py-2 mx-8 flex  group-hover:text-primary">Clients</a>
