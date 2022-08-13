@@ -4,10 +4,10 @@
             <div>
                 <h2 class="font-semibold text-teal-500 mb-5"> Daftar Mahasiswa </h2>
                 <ul>
-                    <?php foreach($data['mhs'] as $mhs) : ?>
-                        <li class="mb-5 font-semibold text-slate-700">
-                            <p> Nama : <?php echo $mhs['nama'] ?> </p>
-                            <p> NIM : <?php echo $mhs['nim'] ?> </p>
+                    <?php foreach ($data['mhs'] as $mhs) : ?>
+                        <li class="font-semibold border border-slate-500 px-5 py-2 w-96 flex justify-between">
+                            <?php echo $mhs['nama'] ?>
+                            <a href="#" class="text-white bg-sky-600 px-3 rounded-full ">detail</a>
                         </li>
                     <?php endforeach; ?>
                 </ul>
