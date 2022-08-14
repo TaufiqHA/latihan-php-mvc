@@ -16,7 +16,7 @@
         <div class="modal-box w-1/3 h-[200px] border border-slate-600 rounded-xl py-5 px-10 absolute right-1/2 top-10 translate-x-1/2 shadow-xl">
             <div class="judul-modal font-semibold text-lg mb-7 flex justify-between">
                 <h1> Tambah Data Mahasiswa </h1>
-                <a href="#" class="hover:cursor-pointer"><img src="<?php echo BASEURL; ?>/img/close.svg" alt="close"></a>
+                <a href="#" class="hover:cursor-pointer" id="button_modal"><img src="<?php echo BASEURL; ?>/img/close.svg" alt="close"></a>
             </div>
             <div class="form-modal">
                 <form action="" id="modal">
