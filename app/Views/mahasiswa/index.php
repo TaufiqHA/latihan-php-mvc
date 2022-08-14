@@ -1,5 +1,5 @@
 <section class="pt-32">
-    <div class="container mx-auto">
+    <div class="container mx-auto relative">
         <div class="flex flex-wrap">
             <div>
                 <h2 class="font-semibold text-teal-500 mb-5"> Detail Mahasiswa </h2>
@@ -11,6 +11,20 @@
                         </li>
                     <?php endforeach; ?>
                 </ul>
+            </div>
+        </div>
+        <div class="modal-box w-1/3 h-[200px] border border-slate-600 rounded-xl py-5 px-10 absolute right-1/2 top-10 translate-x-1/2 shadow-xl">
+            <div class="judul-modal font-semibold text-lg mb-7 flex justify-between">
+                <h1> Tambah Data Mahasiswa </h1>
+                <a href="#" class="hover:cursor-pointer"><img src="<?php echo BASEURL; ?>/img/close.svg" alt="close"></a>
+            </div>
+            <div class="form-modal">
+                <form action="" id="modal">
+                    <input type="text" class="mb-7 p-2 w-full rounded-lg outline-none border border-teal-500 focus:ring focus:ring-teal-500" placeholder="Nama mahasiswa">
+                </form>
+            </div>
+            <div class="button w-full relative">
+                <button class="absolute right-0 p-1 bg-teal-500 rounded-md px-3 font-semibold text-md" form="modal"> Tambah </button>
             </div>
         </div>
     </div>

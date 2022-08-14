@@ -8,7 +8,7 @@
                 <h3 class="font-bold text-lg text-slate-600 mt-2"> Di Website Saya </h3>
             </div>
             <div class="hero">
-
+                <h2></h2>
             </div>
         </div>
     </div>
