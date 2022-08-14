@@ -20,4 +20,13 @@ class Mahasiswa_model {
 		$this->db->bind('id', $id);
 		return $this->db->single();
 	}
+
+	public function tambahDataMahasiswa($data)
+	{
+		$this->db->query('INSERT INTO mahasiswa VALUES ("", :nama, :nim)');
+		$this->db->bind('nama', $data['name']);
+		$this->db->bind('nim', $data['nim']);
+		$this->db->execute();
+		return $this->db->rowCount();
+	}
 }

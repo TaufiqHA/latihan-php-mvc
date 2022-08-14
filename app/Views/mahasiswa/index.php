@@ -2,7 +2,7 @@
     <div class="container mx-auto relative">
         <div class="flex flex-wrap">
             <div>
-                <h2 class="font-semibold text-teal-500 mb-5"> Detail Mahasiswa </h2>
+                <h2 class="font-semibold text-teal-500 mb-5"> Daftar Mahasiswa </h2>
                 <button class="font-semibold p-2 px-10 bg-teal-500 mb-5 rounded-xl text-white" id="button2_modal"> Tambah Mahasiswa </button>
                 <ul>
                     <?php foreach ($data['mhs'] as $mhs) : ?>
@@ -14,18 +14,21 @@
                 </ul>
             </div>
         </div>
-        <div class="modal-box w-1/3 h-[200px] border border-slate-600 rounded-xl py-5 px-10 absolute right-1/2 top-10 translate-x-1/2 shadow-xl hidden_modal" id="modal_box">
+        <div class="modal-box w-1/3  border border-slate-600 rounded-xl py-5 px-10 absolute right-1/2 top-10 translate-x-1/2 shadow-2xl hidden_modal" id="modal_box">
             <div class="judul-modal font-semibold text-lg mb-7 flex justify-between">
                 <h1> Tambah Data Mahasiswa </h1>
                 <a href="#" class="hover:cursor-pointer" id="button_modal"><img src="<?php echo BASEURL; ?>/img/close.svg" alt="close"></a>
             </div>
             <div class="form-modal">
-                <form action="" id="modal">
-                    <input type="text" class="mb-7 p-2 w-full rounded-lg outline-none border border-teal-500 focus:ring focus:ring-teal-500" placeholder="Nama mahasiswa">
+                <form action="<?php echo BASEURL; ?>/mahasiswa/tambah" id="modal" method="post">
+                    <label for="name" class="font-semibold mb-3 block"> Nama </label>
+                    <input type="text" class="mb-7 p-2 w-full rounded-lg outline-none border border-teal-500 focus:ring focus:ring-teal-500" placeholder="..." name="name">
+                    <label for="nim" class="font-semibold mb-3 block"> NIM </label>
+                    <input type="text" class="mb-7 p-2 w-full rounded-lg outline-none border border-teal-500 focus:ring focus:ring-teal-500" placeholder="..." name="nim">
                 </form>
             </div>
-            <div class="button w-full relative">
-                <button class="absolute right-0 p-1 bg-teal-500 rounded-md px-3 font-semibold text-md" form="modal"> Tambah </button>
+            <div class="button w-full flex justify-end">
+                <button class="p-1 bg-teal-500 rounded-md px-3 font-semibold text-md text-white" form="modal" type="submit"> Tambah </button>
             </div>
         </div>
     </div>
