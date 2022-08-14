@@ -7,7 +7,7 @@
                     <?php foreach ($data['mhs'] as $mhs) : ?>
                         <li class="font-semibold border border-slate-500 px-5 py-2 w-96 flex justify-between">
                             <?php echo $mhs['nama'] ?>
-                            <a href="#" class="text-white bg-sky-600 px-3 rounded-full ">detail</a>
+                            <a href="<?php echo BASEURL; ?>/Mahasiswa/detail/<?php echo $mhs['id'] ?>" class="text-white bg-sky-600 px-3 rounded-full ">detail</a>
                         </li>
                     <?php endforeach; ?>
                 </ul>
