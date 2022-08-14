@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hidden_modal {
+    @apply scale-0 transition duration-500 ; 
+}
+
+.set_modal {
+    @apply scale-100 transition duration-500;
+}
