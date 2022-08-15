@@ -37,4 +37,12 @@ class Mahasiswa extends Controller
 			exit;
 		}
 	}
+
+	public function update($data)
+	{
+		if ($this->model('Mahasiswa_model')->updateDataMahasiswa($data) > 0) {
+			header('Location: ' . BASEURL . '/mahasiswa');
+			exit;
+		}
+	}
 }
