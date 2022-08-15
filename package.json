@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/TaufiqHA/latihan-php-mvc#readme",
   "dependencies": {
-    "prettier": "^2.7.1",
     "tailwindcss": "^3.1.8"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
   }
 }
