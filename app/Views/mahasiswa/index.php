@@ -6,15 +6,18 @@
                 <button class="font-semibold p-2 px-10 bg-teal-500 mb-5 rounded-xl text-white" id="button2_modal"> Tambah Mahasiswa </button>
                 <ul>
                     <?php foreach ($data['mhs'] as $mhs) : ?>
-                        <li class="font-semibold border border-slate-500 px-5 py-2 w-96 flex justify-between">
+                        <li class="font-semibold border border-slate-500 px-5 py-2 w-[600px] flex justify-between ">
                             <?php echo $mhs['nama'] ?>
-                            <a href="<?php echo BASEURL; ?>/Mahasiswa/detail/<?php echo $mhs['id'] ?>" class="text-white bg-sky-600 px-3 rounded-full ">detail</a>
+                            <span class="flex justify-evenly w-1/3">
+                                <a href="<?php echo BASEURL; ?>/Mahasiswa/detail/<?php echo $mhs['id'] ?>" class="text-white bg-sky-600 px-3 rounded-full">detail</a>
+                                <a href="<?php echo BASEURL; ?>/Mahasiswa/hapus/<?php echo $mhs['id'] ?>" class="text-white bg-pink-600 px-3 rounded-full">hapus</a>
+                            </span>
                         </li>
                     <?php endforeach; ?>
                 </ul>
             </div>
         </div>
-        <div class="modal-box w-1/3  border border-slate-600 rounded-xl py-5 px-10 absolute right-1/2 top-10 translate-x-1/2 shadow-2xl hidden_modal" id="modal_box">
+        <div class="modal-box w-1/3 bg-white border border-slate-600 rounded-xl py-5 px-10 absolute right-1/2 top-10 translate-x-1/2 shadow-2xl z-50 hidden_modal" id="modal_box">
             <div class="judul-modal font-semibold text-lg mb-7 flex justify-between">
                 <h1> Tambah Data Mahasiswa </h1>
                 <a href="#" class="hover:cursor-pointer" id="button_modal"><img src="<?php echo BASEURL; ?>/img/close.svg" alt="close"></a>

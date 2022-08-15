@@ -29,4 +29,12 @@ class Mahasiswa extends Controller
 			exit;
 		}
 	}
+
+	public function hapus($data)
+	{
+		if ($this->model('Mahasiswa_model')->hapusDataMahasiswa($data) > 0) {
+			header('Location: ' . BASEURL . '/mahasiswa');
+			exit;
+		}
+	}
 }
