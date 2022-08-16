@@ -11,7 +11,7 @@
                             <span class="flex justify-evenly w-1/2">
                                 <a href="<?php echo BASEURL; ?>/Mahasiswa/detail/<?php echo $mhs['id'] ?>" class="text-white bg-sky-600 px-3 rounded-full">detail</a>
                                 <a href="<?php echo BASEURL; ?>/Mahasiswa/hapus/<?php echo $mhs['id'] ?>" class="text-white bg-pink-600 px-3 rounded-full">hapus</a>
-                                <a href="#" class="text-white bg-yellow-600 px-3 rounded-full" id="button_update">update</a>
+                                <a href="<?php echo BASEURL; ?>/Mahasiswa/update/<?php echo $mhs['id'] ?>" class="text-white bg-yellow-600 px-3 rounded-full" id="button_update">update</a>
                             </span>
                         </li>
                     <?php endforeach; ?>

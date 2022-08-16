@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-class Mahasiswa extends Controller 
+class Mahasiswa extends Controller
 {
 	public function index()
 	{
@@ -36,10 +36,5 @@ class Mahasiswa extends Controller
 			header('Location: ' . BASEURL . '/mahasiswa');
 			exit;
 		}
-	}
-
-	public function update($data)
-	{
-		
 	}
 }
