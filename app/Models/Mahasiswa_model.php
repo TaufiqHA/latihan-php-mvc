@@ -41,6 +41,6 @@ class Mahasiswa_model {
 
 	public function updateDataMahasiswa()
 	{
-
+		
 	}
 }
