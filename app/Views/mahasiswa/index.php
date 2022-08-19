@@ -30,9 +30,9 @@
                 <form action="<?php echo BASEURL; ?>/mahasiswa/tambah" id="modal" method="post">
                     <input type="hidden" name="id" id="id">
                     <label for="name" class="font-semibold mb-3 block"> Nama </label>
-                    <input type="text" class="mb-7 p-2 w-full rounded-lg outline-none border border-teal-500 focus:ring focus:ring-teal-500" placeholder="..." name="name" id="nama">
+                    <input type="text" class="mb-7 p-2 w-full rounded-lg outline-none border border-teal-500 focus:ring focus:ring-teal-500" placeholder="..." name="name" id="nama" autocomplete="off" autofocus>
                     <label for="nim" class="font-semibold mb-3 block"> NIM </label>
-                    <input type="text" class="mb-7 p-2 w-full rounded-lg outline-none border border-teal-500 focus:ring focus:ring-teal-500" placeholder="..." name="nim" id="nim">
+                    <input type="text" class="mb-7 p-2 w-full rounded-lg outline-none border border-teal-500 focus:ring focus:ring-teal-500" placeholder="..." name="nim" id="nim" autocomplete="off" autofocus>
                 </form>
             </div>
             <div class="button w-full flex justify-end">
