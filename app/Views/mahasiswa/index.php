@@ -10,6 +10,7 @@
                             <?php echo $mhs['nama'] ?>
                             <span class="inline-block w-1/2 float-right">
                                 <a href="<?php echo BASEURL; ?>/Mahasiswa/hapus/<?php echo $mhs['id'] ?>" class="text-white bg-pink-600 px-3 rounded-full float-right" onclick="return confirm('anda yakin ingin menghapus data ini?')">hapus</a>
+                                <a href="#" class="text-white bg-teal-600 px-3 rounded-full float-right tampil_modal_ubah" id="button2_modal" data-id="<?php echo $mhs['id'] ?>">ubah</a>
                                 <a href="<?php echo BASEURL; ?>/Mahasiswa/detail/<?php echo $mhs['id'] ?>" class="text-white bg-sky-600 px-3 rounded-full float-right">detail</a>
                             </span>
                         </li>
@@ -22,7 +23,7 @@
 
         <div class=" modal-box w-1/3 bg-white border border-slate-600 rounded-xl py-5 px-10 absolute right-1/2 top-10 translate-x-1/2 shadow-2xl z-50 hidden_modal" id="modal_box">
             <div class="judul-modal font-semibold text-lg mb-7 flex justify-between">
-                <h1> Tambah Data Mahasiswa </h1>
+                <h1 id="modal_label"> Tambah Data Mahasiswa </h1>
                 <a href="#" class="hover:cursor-pointer" id="button_modal"><img src="<?php echo BASEURL; ?>/img/close.svg" alt="close"></a>
             </div>
             <div class="form-modal">
@@ -34,7 +35,7 @@
                 </form>
             </div>
             <div class="button w-full flex justify-end">
-                <button class="p-1 bg-teal-500 rounded-md px-3 font-semibold text-md text-white" form="modal" type="submit"> Tambah </button>
+                <button class="p-1 bg-teal-500 rounded-md px-3 font-semibold text-md text-white" form="modal" type="submit" id="modal_button"> Tambah </button>
             </div>
         </div>
     </div>
