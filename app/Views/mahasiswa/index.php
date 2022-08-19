@@ -29,9 +29,9 @@
             <div class="form-modal">
                 <form action="<?php echo BASEURL; ?>/mahasiswa/tambah" id="modal" method="post">
                     <label for="name" class="font-semibold mb-3 block"> Nama </label>
-                    <input type="text" class="mb-7 p-2 w-full rounded-lg outline-none border border-teal-500 focus:ring focus:ring-teal-500" placeholder="..." name="name">
+                    <input type="text" class="mb-7 p-2 w-full rounded-lg outline-none border border-teal-500 focus:ring focus:ring-teal-500" placeholder="..." name="name" id="nama">
                     <label for="nim" class="font-semibold mb-3 block"> NIM </label>
-                    <input type="text" class="mb-7 p-2 w-full rounded-lg outline-none border border-teal-500 focus:ring focus:ring-teal-500" placeholder="..." name="nim">
+                    <input type="text" class="mb-7 p-2 w-full rounded-lg outline-none border border-teal-500 focus:ring focus:ring-teal-500" placeholder="..." name="nim" id="nim">
                 </form>
             </div>
             <div class="button w-full flex justify-end">

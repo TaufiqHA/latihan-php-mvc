@@ -21,7 +21,8 @@ $(function()
             method: "post",
             success: function(data)
             {
-                console.log(data);
+                    $('#nama').val(data.nama);
+                    $('#nim').val(data.nim);
             }
         })
     })
