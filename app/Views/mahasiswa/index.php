@@ -28,6 +28,7 @@
             </div>
             <div class="form-modal">
                 <form action="<?php echo BASEURL; ?>/mahasiswa/tambah" id="modal" method="post">
+                    <input type="hidden" name="id" id="id">
                     <label for="name" class="font-semibold mb-3 block"> Nama </label>
                     <input type="text" class="mb-7 p-2 w-full rounded-lg outline-none border border-teal-500 focus:ring focus:ring-teal-500" placeholder="..." name="name" id="nama">
                     <label for="nim" class="font-semibold mb-3 block"> NIM </label>

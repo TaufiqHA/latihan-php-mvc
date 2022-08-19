@@ -42,4 +42,12 @@ class Mahasiswa extends Controller
 	{
 		echo json_encode($this->model('Mahasiswa_model')->getMahasiswaByid($_POST['id']));
 	}
+
+	public function ubah()
+	{
+		if ($this->model('Mahasiswa_model')->ubahDataMahasiswa($_POST) > 0) {
+			header('Location: ' . BASEURL . '/mahasiswa');
+			exit;
+		}
+	}
 }

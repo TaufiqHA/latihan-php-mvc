@@ -39,8 +39,13 @@ class Mahasiswa_model {
 		return $this->db->rowCount();
 	}
 
-	public function updateDataMahasiswa()
+	public function ubahDataMahasiswa($data)
 	{
-		
+		$this->db->query('UPDATE mahasiswa SET nama = :nama, nim = :nim WHERE id = :id');
+		$this->db->bind('nama', $data['name']);
+		$this->db->bind('nim', $data['nim']);
+		$this->db->bind('id', $data['id']);
+		$this->db->execute();
+		return $this->db->rowCount();
 	}
 }
