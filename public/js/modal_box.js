@@ -12,7 +12,6 @@ $(function()
         $('#modal_box').addClass('set_modal');
         $('#modal_label').html('ubah data mahasiswa');
         $('#modal_button').html('ubah');
-        $('.form-modal form').attr('action', 'http://localhost:8080/latihan-php-mvc/public/mahasiswa/ubah');
 
         const id = $(this).data('id');
 
@@ -23,17 +22,8 @@ $(function()
             dataType: "json",
             success: function(data)
             {
-                    $('#nama').val(data.nama);
-                    $('#nim').val(data.nim);
-                    $('#id').val(data.id);
+                console.log(data);
             }
         })
-    })
-
-     $('#button2_modal').on('click', function()
-    {
-        $('.form-model form').attr('action', 'http://localhost:8080/latihan-php-mvc/public/mahasiswa/tambah');
-        $('#nama').val('');
-        $('#nim').val('');
     })
 })
